@@ -20,7 +20,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: videgrenier
+      MYSQL_DATABASE: videgrenierenligne
       MYSQL_USER: user
       MYSQL_PASSWORD: userpassword
     volumes:
