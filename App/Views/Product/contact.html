@@ -1,15 +1,58 @@
-{% extends "base.html" %}
-
-{% block title %}Page de test{% endblock %}
-
-{% block body %}
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="test-div">
-                Test
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Contact</title>
+    <link rel="stylesheet" href="/style/main.scss"> <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm" action="form-contact.php" method="POST">
+            <div>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
             </div>
-        </div>
+            <div>
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="telephone">Téléphone:</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+        <div id="formMessage" class="form-message"></div>
     </div>
-</div>
-{% endblock body %}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
+
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('success')) {
+                if (urlParams.get('success') == '1') {
+                    formMessage.textContent = 'Votre message a été envoyé avec succès!';
+                    formMessage.style.color = 'green';
+                } else {
+                    formMessage.textContent = "Une erreur s'est produite lors de l'envoi de votre message.";
+                    formMessage.style.color = 'red';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
