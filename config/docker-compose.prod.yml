@@ -1,0 +1,39 @@
+version: "3"
+name: ${PROJECT_NAME}
+
+services:
+  app:
+    container_name: ${APP_CONTAINER_NAME}
+    image: ${IMAGE_NAME}
+    restart: always
+    ports:
+      - "${APP_PORT}"
+    environment:
+      MYSQL_HOST: ${DB_HOST}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_DB: ${DB_NAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+
+  db:
+    container_name: ${DB_CONTAINER_NAME}
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_DB: ${DB_NAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+    ports:
+      - "${DB_PORT}:${TARGET_DB_PORT}"
+
+  phpmyadmin:
+    container_name: ${PMA_CONTAINER_NAME}
+    restart: always
+    environment:
+      PMA_HOST: ${DB_HOST}
+      PMA_PORT: ${TARGET_DB_PORT}
+      PMA_ARBITRARY: 1
+    ports:
+      - ${PMA_PORT}
+volumes:
+  dbdata:

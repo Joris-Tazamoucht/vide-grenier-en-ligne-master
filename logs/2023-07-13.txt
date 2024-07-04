@@ -1,0 +1,97 @@
+[13-Jul-2023 10:01:32 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:01:58 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:03:06 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:03:24 UTC] Uncaught exception: 'Error' with message 'Call to a member function prepare() on null'
+Stack trace: #0 /var/www/html/App/Controllers/User.php(108): App\Models\User::getByLogin('test@test.fr')
+#1 /var/www/html/App/Controllers/User.php(32): App\Controllers\User->login(Array)
+#2 [internal function]: App\Controllers\User->loginAction()
+#3 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#4 /var/www/html/Core/Router.php(126): Core\Controller->__call('login', Array)
+#5 /var/www/html/public/index.php(46): Core\Router->dispatch('login')
+#6 {main}
+Thrown in '/var/www/html/App/Models/User.php' on line 38
+[13-Jul-2023 10:05:25 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:06:39 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:10:40 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:11:03 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:12:27 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:13:51 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:14:42 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[13-Jul-2023 10:15:06 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38

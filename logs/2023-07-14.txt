@@ -1,0 +1,57 @@
+[14-Jul-2023 13:24:59 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[14-Jul-2023 13:25:16 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[14-Jul-2023 13:59:27 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[14-Jul-2023 14:00:35 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[14-Jul-2023 14:00:51 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[14-Jul-2023 14:02:14 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[14-Jul-2023 15:57:41 UTC] Uncaught exception: 'ParseError' with message 'syntax error, unexpected token "echo", expecting variable or "{" or "$"'
+Stack trace: #0 /var/www/html/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}('/var/www/html/v...')
+#1 /var/www/html/App/Controllers/Home.php(24): Composer\Autoload\ClassLoader->loadClass('Core\\View')
+#2 [internal function]: App\Controllers\Home->indexAction()
+#3 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#4 /var/www/html/Core/Router.php(126): Core\Controller->__call('index', Array)
+#5 /var/www/html/public/index.php(46): Core\Router->dispatch('')
+#6 {main}
+Thrown in '/var/www/html/Core/View.php' on line 47

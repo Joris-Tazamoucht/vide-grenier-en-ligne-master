@@ -1,0 +1,32 @@
+[15-Jul-2023 16:35:44 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[15-Jul-2023 16:36:24 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[15-Jul-2023 16:36:58 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38
+[15-Jul-2023 16:37:07 UTC] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/html/App/Controllers/Api.php(25): App\Models\Articles::getAll('')
+#1 [internal function]: App\Controllers\Api->ProductsAction()
+#2 /var/www/html/Core/Controller.php(48): call_user_func_array(Array, Array)
+#3 /var/www/html/Core/Router.php(126): Core\Controller->__call('products', Array)
+#4 /var/www/html/public/index.php(46): Core\Router->dispatch('api/products')
+#5 {main}
+Thrown in '/var/www/html/App/Models/Articles.php' on line 38

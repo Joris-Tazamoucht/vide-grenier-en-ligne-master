@@ -3,7 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\Articles;
-use App\Utility\Upload;
+use App\Helpers\Upload;
+use App\Helpers\Mailer;
 use \Core\View;
 
 /**
@@ -48,6 +49,7 @@ class Product extends \Core\Controller
      */
     public function showAction()
     {
+        
         $id = $this->route_params['id'];
 
         try {
@@ -58,9 +60,31 @@ class Product extends \Core\Controller
             var_dump($e);
         }
 
+        if(isset($_POST['submit'])) {
+            $f = $_POST;
+            $this->sendMail($f,  $article[0]['user_id']);
+        }
+
         View::renderTemplate('Product/Show.html', [
             'article' => $article[0],
             'suggestions' => $suggestions
         ]);
+    }
+
+    /**
+     * Envoie un mail à partir du formulaire de contact
+     */
+    private function sendMail($data, $user_id) {
+        try {
+            $emailTo = \App\Models\User::getOne($user_id)[0]['email'];
+            $senderName = $data["name"];
+            $senderEmail = $data["email"];
+            $subject = $data["subject"];
+            $message = $data["content"];
+
+            Mailer::sendMail($emailTo, $senderName, $senderEmail, $subject, $message);
+        } catch (\Exception $e) {
+            var_dump($e);
+        }
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
-require 'src/PHPmailer/src/PHPMailer.php';
-require 'src/PHPmailer/src/SMTP.php';
+require '/public/PHPmailer/src/PHPMailer.php';
+require '/public/PHPmailer/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;

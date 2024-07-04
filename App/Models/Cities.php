@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-use App\Utility\Hash;
+use App\Helpers\Hash;
 use Core\Model;
 use App\Core;
 use Exception;
-use App\Utility;
+use App\Helpers;
 
 /**
  * City Model:

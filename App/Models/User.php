@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-use App\Utility\Hash;
+use App\Helpers\Hash;
 use Core\Model;
 use App\Core;
 use Exception;
-use App\Utility;
+use App\Helpers;
 
 /**
  * User Model:
@@ -55,12 +55,26 @@ class User extends Model {
     public static function login() {
         $db = static::getDB();
 
-        $stmt = $db->prepare('SELECT * FROM articles WHERE articles.id = ? LIMIT 1');
+        $stmt = $db->prepare("
+        SELECT * FROM articles WHERE articles.id = ? LIMIT 1
+        ");
 
         $stmt->execute([$id]);
 
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
+
+    public static function getOne($id) {
+        $db = static::getDB();
+
+        $stmt = $db->prepare("
+        SELECT * FROM users WHERE id = ? LIMIT 1
+        ");
+
+        $stmt->execute([$id]);
+
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+    }
 
 }
