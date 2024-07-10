@@ -8,17 +8,6 @@ git pull origin stage
 echo "Arrêt et suppression des conteneurs existants..."
 docker-compose -f docker-compose-stage.yml -p stage down
 
-# Supprimer les conteneurs Docker orphelins
-echo "Suppression des conteneurs Docker orphelins..."
-docker container prune -f
-
-# Supprimer les images Docker orphelines
-echo "Suppression des images Docker orphelines..."
-docker image prune -a -f
-
-# Supprimer les volumes Docker orphelins
-echo "Suppression des volumes Docker orphelins..."
-docker volume prune -f
 
 # Supprimer les volumes spécifiques à votre projet s'ils sont nommés
 echo "Suppression des volumes spécifiques à votre projet..."
