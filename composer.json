@@ -1,13 +1,22 @@
 {
     "require": {
-        "twig/twig": "~3.0",
-      "ext-pdo": "*",
-      "ext-json": "*"
+        "twig/twig": "^3.10",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "phpmailer/phpmailer": "^6.9",
+        "phpunit/phpunit": "^9.5",
+        "dompdf/dompdf": "^3.0",
+        "phpdocumentor/shim": "^3"
     },
     "autoload": {
         "psr-4": {
             "Core\\": "Core/",
             "App\\": "App/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "phpdocumentor/shim": true
         }
     }
 }

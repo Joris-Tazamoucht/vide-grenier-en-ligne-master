@@ -2,6 +2,10 @@
 * Content Account
 */
 
+
+#ou {
+  text-align: center;
+}
 .bg-image {
   text-align: center;
   img {
@@ -12,7 +16,7 @@
 .login-wraper{
   position: relative;
   .login-window {
-    position: absolute;
+    
     width: 570px;
     top: 50%;
     left: 50%;
@@ -33,6 +37,7 @@
       }
     }
     .l-form {
+      width: 100%;
       text-align: left;
       background-color: $c-bg;
       border-bottom-left-radius: 3px;
@@ -125,7 +130,7 @@
   }
 }
 
-@media (min-width: 100px) and (max-width: 1365px) {
+
   .banner-text {
     position: relative;
     top: 0;
@@ -151,13 +156,17 @@
   }
 
   .login-wraper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     .login-window {
-      position: relative;
-      width: auto;
-      top: 0;
-      left: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       margin-left:0;
       margin-top: 0;
+      top: 0;
+      left: 0;
       .l-head{
         padding: 20px 10px;
       }
@@ -171,9 +180,57 @@
       }
     }
   }
+  @media (max-width: 760px) {
+    .banner-text {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-top: 0;
+      margin-left: 0;
+      width: auto;
+      .line {
+        display: none;
+      }
+      .b-text {
+        color: #000000;
+        font-size: 30px;
+        text-align: center;
+        line-height: 30px;
+        padding-top: 30px;
+      }
+      .overtext {
+        margin: 15px 0;
+        color: #a1a1a1;
+        text-align: center;
+      }
+    }
+  
+    .login-wraper {
+      .login-window {
+        position: relative;
+        width: auto;
+        top: 0;
+        left: 0;
+        margin-left:0;
+        margin-top: 0;
+        .l-head{
+          padding: 20px 10px;
+        }
+        .l-form {
+  
+          //text-align: left;
+          //background-color: #fbfdfe;
+          //border-bottom-left-radius: 3px;
+          //border-bottom-right-radius: 3px;
+          padding: 25px 20px;
+        }
+      }
+    }
+  
+  
+  }
 
 
-}
 /*
 * Content Account END
 */

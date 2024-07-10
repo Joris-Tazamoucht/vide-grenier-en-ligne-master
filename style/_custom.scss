@@ -218,13 +218,13 @@ ul.list-inline {
   li {
     a {
       &:not(.color-active) {
-        color: $c-light;
+        color: red;
         &:hover {
-          color: $c-default;
+          color: red;
         }
       }
       &.color-active {
-        color: $c-active;
+        color: red;
       }
     }
   }
