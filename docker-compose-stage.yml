@@ -28,6 +28,8 @@ services:
       - ./sql:/docker-entrypoint-initdb.d
     networks:
       - lamp-network
+    ports:
+      - "3306:3306"
  
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
