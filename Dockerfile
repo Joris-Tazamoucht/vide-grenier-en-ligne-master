@@ -16,9 +16,18 @@ RUN apt-get update && apt-get install -y \
 # Installez Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# Installer PHPDocumentor
+RUN composer global require phpdocumentor/phpdocumentor
+
+# Ajouter le chemin du binaire Composer global au PATH
+ENV PATH="/root/.composer/vendor/bin:${PATH}"
+
 # Copiez le contenu de votre application dans le conteneur
 COPY . /var/www/html
 WORKDIR /var/www/html
+
+# Copie du fichier .env dans le conteneur
+COPY .env /var/www/html/.env
 
 # Exécutez Composer pour mettre à jour et installer les dépendances
 RUN composer update
@@ -43,6 +52,9 @@ RUN echo '<VirtualHost *:80>\n\
 # Activez les modules Apache nécessaires
 RUN a2enmod rewrite
 
-# Installez Node.js (ajouté à partir de votre configuration)
+# Installez Node.js
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash \
     && apt-get install -y nodejs
+
+# Exposer le port 80
+EXPOSE 80

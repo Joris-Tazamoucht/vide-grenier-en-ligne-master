@@ -39,8 +39,8 @@ $c-border-ipt-dark: #424242;
 $c-h4-dark: #a9a9a9;
 $c-comment-active: #a9a9a9;
 
-$ff-def: 'Hind Guntur', sans-serif;
-$ff-hind: 'Hind', sans-serif;
+$ff-def: "Hind Guntur", sans-serif;
+$ff-hind: "Hind", sans-serif;
 
 $fs-xxxsm: 10px;
 $fs-xxsm: 12px;
@@ -56,16 +56,18 @@ $fs-xl: 80px;
 
 $space-def: 70px;
 $space-med: 40px;
-$space-sm:  30px;
-$space-sms:  25px;
-$space-smm:  23px;
+$space-sm: 30px;
+$space-sms: 25px;
+$space-smm: 23px;
 $space-smmm: 20px;
 $space-xs: 15px;
 
 /*
 * General Styles
 */
-
+#ou {
+  text-align: center;
+}
 body {
   color: $c-default;
   font-family: $ff-def;
@@ -87,7 +89,6 @@ body.dark {
   }
 }
 
-
 .logo {
   width: 44px;
   height: 44px;
@@ -104,7 +105,8 @@ a {
   }
 }
 
-.form-control, .btn {
+.form-control,
+.btn {
   font-size: $fs-def;
 }
 .form-control {
@@ -126,7 +128,7 @@ label {
   color: $c-default;
 }
 .color-active {
-  color: $c-active;
+  color: red;
 }
 
 .padding-def {
@@ -151,7 +153,8 @@ label {
   box-shadow: none;
 }
 
-.btn:active, .btn.active {
+.btn:active,
+.btn.active {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -167,7 +170,7 @@ label {
 .btn-default.active,
 .btn-default:focus,
 .btn-default.focus,
-.open>.dropdown-toggle.btn-default {
+.open > .dropdown-toggle.btn-default {
   color: $c-icon;
   background-color: transparent;
   border-color: transparent;
@@ -175,19 +178,19 @@ label {
 
 .btn-default:active:hover,
 .btn-default.active:hover,
-.open>.dropdown-toggle.btn-default:hover,
+.open > .dropdown-toggle.btn-default:hover,
 .btn-default:active:focus,
 .btn-default.active:focus,
-.open>.dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:focus,
 .btn-default:active.focus,
 .btn-default.active.focus,
-.open>.dropdown-toggle.btn-default.focus {
+.open > .dropdown-toggle.btn-default.focus {
   color: $c-icon;
   background-color: transparent;
   border-color: transparent;
 }
 
-.pull-right>.dropdown-menu {
+.pull-right > .dropdown-menu {
   right: -1px;
 }
 
@@ -238,7 +241,9 @@ a.active {
 .head-div {
   border-top: solid 1px $c-divider;
 }
-
+.v-def {
+  text-align: center;
+}
 .btn-cv1 {
   border-radius: 3px;
   border: solid 1px $c-active;
@@ -253,7 +258,6 @@ a.active {
     background-color: $c-white;
   }
 }
-
 
 /*
 * General Styles END

@@ -113,7 +113,7 @@ class Router
 
             if (class_exists($controller)) {
 
-                if(isset($this->params['private']) && !isset($_SESSION['user']['id'])){
+                if (isset($this->params['private']) && !isset($_SESSION['user']['id'])) {
                     throw new \Exception("You must be logged in");
                 }
 
@@ -124,7 +124,6 @@ class Router
 
                 if (preg_match('/action$/i', $action) == 0) {
                     $controller_object->$action();
-
                 } else {
                     throw new \Exception("Method $action in controller $controller cannot be called directly - remove the Action suffix to call this method");
                 }
